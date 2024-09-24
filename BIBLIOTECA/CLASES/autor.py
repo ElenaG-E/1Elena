@@ -8,4 +8,17 @@ class Autor(paises):
         self.nombre_autor = nombre_autor
         self.seudonimo_autor = seudonimo_autor
         self.fecha_nac = fecha_nac
-        self. 
+        self. gi
+
+
+from github import Github
+
+# Autenticación con tu token de acceso personal
+token = 'tu_token_de_acceso_personal'
+g = Github(token)
+
+# Obtener tu perfil
+user = g.get_user()
+
+# Imprimir información del usuario
+print(f"Hola, {user.login}! Tu nombre es {user.name}.")
